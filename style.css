@@ -15,52 +15,36 @@ html {
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
-  overflow: hidden;
+  overflow: scroll;
 }
 
-.container {
-  margin-right: auto;
-  margin-left: auto;
-
-  max-width: 90vw;
-
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.top-nav {
-  height: 10vh;
-  width: 100vw;
-  min-height: 88px;
-  background: rgba(150, 150, 150, 0.2);
-  overflow: hidden;
-  z-index: 2;
-  display: block;
-}
-
-.links {
-  display: block;
-  margin: 0 150px 0 0;
+.white {
   color: white;
-  font-size: 20px;
 }
 
-.logo {
-  color: white;
-  font-size: 44px;
+.main {
+  margin: 20% 0 0 0;
+  display: flex;
+  height: 200px;
+  flex-direction: column;
 }
 
-navbar ul {
-  float: right;
+.done-right {
+  padding-bottom: 50px;
 }
 
-navbar li {
-  display: inline;
-  position: relative;
-  margin-right: 20px;
+.para {
+  margin-bottom: 100px;
 }
 
-navbar li a {
-  text-decoration: none;
+.button {
+  margin: 100px 0 0 0;
+}
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+p a {
   color: white;
 }
