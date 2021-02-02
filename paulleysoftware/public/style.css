@@ -1,0 +1,52 @@
+body,
+html {
+  height: 100%;
+}
+
+.center-cropped {
+  background-image: url('./images/christopher-gower-m_HRfLhgABo-unsplash.jpg');
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: scroll;
+}
+
+.white {
+  color: white;
+}
+
+.main {
+  margin: 20% 0 0 0;
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+}
+
+.done-right {
+  padding-bottom: 50px;
+}
+
+.para {
+  margin-bottom: 100px;
+}
+
+.button {
+  margin: 100px 0 0 0;
+}
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+p a {
+  color: white;
+}
