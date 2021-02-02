@@ -19,7 +19,6 @@ export const Landing = () => {
                 </div>
             </div>
         </section>
-        <Jumbotron text="Here are just a few example projects I've either completed or am currently working on." />
         </div>
     )
 }
