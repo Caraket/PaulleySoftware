@@ -1,6 +1,7 @@
 const express = require('express');
 const connectDB = require('./config/db');
 const jwt = require('jsonwebtoken');
+const cors = require('cors');
 const userRoutes = require('./Routes/userRoutes');
 const User = require('./Models/User');
 
@@ -10,9 +11,9 @@ connectDB();
 
 app.use(express.json({extended: false}));
 
+app.use(cors());
 
-
-app.use('/auth', userRoutes);
+app.use('/api', userRoutes);
 
 app.use('/', (req, res) => {
     app.send('API RUNNING!')

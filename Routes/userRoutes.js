@@ -1,6 +1,8 @@
 const bcrypt = require('bcryptjs');
 const express = require('express');
 const jwt = require('jsonwebtoken');
+const config = require('config');
+const auth = require('../middleware/auth');
 const User = require('../Models/User');
 const router = express.Router();
 
@@ -32,7 +34,7 @@ router.post('/login', async (req, res) => {
         const validPassword = await bcrypt.compare(body.password, user.password);
         if(validPassword) {
             // Assign a JWT token
-            jwt.sign({user: User}, 'dejasuid8923sud', (err, token) => {
+            jwt.sign({user: User}, config.get('TOKEN_SECRET'), (err, token) => {
                 if(err){
                     console.error(err.message);
                 }
@@ -47,6 +49,17 @@ router.post('/login', async (req, res) => {
         res.status(401).json({ error: "Invalid Credentials" });
     }
     
+});
+
+router.get('/users', auth, async (req, res) => {
+    await User.find({}, (err, users) => {
+        if(err){
+            console.error(err.message);
+        }
+        else{
+            res.send(users);
+        }
+    })
 });
 
 module.exports = router;

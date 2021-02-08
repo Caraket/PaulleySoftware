@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb://localhost:27017/paulleysoftware"
+    "mongoURI": "mongodb://localhost:27017/paulleysoftware",
+    "TOKEN_SECRET": "dejasuid8923sud"
 }
