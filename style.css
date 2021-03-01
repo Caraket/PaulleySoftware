@@ -48,3 +48,29 @@ html {
 p a {
   color: white;
 }
+
+.thumbnail iframe {
+  width: 1440px;
+  height: 900px;
+}
+
+.thumbnail {
+  position: relative;
+  -ms-zoom: 0.25;
+  -moz-transform: scale(0.25);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.25);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.25);
+  -webkit-transform-origin: 0 0;
+}
+
+.under a {
+  font-size: 3.4rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.under a:hover {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
