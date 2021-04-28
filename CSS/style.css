@@ -4,7 +4,7 @@ html {
 }
 
 .center-cropped {
-  background-image: url('./images/christopher-gower-m_HRfLhgABo-unsplash.jpg');
+  background-image: url('../images/christopher-gower-m_HRfLhgABo-unsplash.jpg');
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
